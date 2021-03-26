@@ -1,0 +1,68 @@
+//Colors
+$white: #fff;
+$black: #000;
+$grey: #777;
+$light-grey: #f9f9ff;
+$dark-grey: #111;
+$purple: #8a90ff;
+$gradient: linear-gradient(90deg, #828fff 0%, #d496ff 100%);
+$box-shadow: 0 10px 30px 0 rgba(109, 109, 109, 0.267);
+
+//Fonts
+@font-face {
+  font-family: "Roboto";
+  font-weight: 300;
+  src: url("../fonts/Roboto-Light.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-weight: 400;
+  src: url("../fonts/Roboto-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-weight: 500;
+  src: url("../fonts/Roboto-Medium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-weight: 700;
+  src: url("../fonts/Roboto-Bold.ttf") format("truetype");
+}
+
+@mixin font($weight) {
+  font-family: "Roboto";
+  font-weight: $weight;
+}
+
+@mixin transitionEase($time, $bezier) {
+  transition: all $time $bezier;
+}
+
+.button-round-edges {
+  @include font(400);
+  font-size: 1rem;
+  padding: 15px 25px;
+  background-color: $white;
+  border: 1px solid $white;
+  border-radius: 4px;
+  outline: none;
+  @include transitionEase(0.7s, ease-in-out);
+
+  &:hover {
+    background-color: transparent;
+    border: 1px solid $white;
+    color: $white;
+  }
+}
+
+body{
+  font-family: 'Roboto';
+}
+
+.paragraph{
+  color: $grey;
+}

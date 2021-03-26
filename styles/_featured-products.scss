@@ -1,0 +1,66 @@
+.featured-products {
+  font-family: "Roboto";
+  text-align: center;
+}
+
+.section-title {
+  margin-top: 50px;
+  margin-bottom: 10px;
+}
+
+.section-subtitle {
+  margin-bottom: 50px;
+}
+
+.product-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+  grid-gap: 20px;
+  margin: 0 50px;
+}
+
+.product-card {
+  width: fit-content;
+  height: fit-content;
+  box-shadow: $box-shadow;
+  background-color: $dark-grey;
+  color: $white;
+  border-radius: 4px;
+}
+
+.product-card-image-background {
+  background-color: $white;
+  padding: 20px;
+}
+
+.product-card-info {
+  padding: 20px;
+}
+
+.product-name {
+  margin-bottom: 10px;
+}
+
+.product-short-info {
+  color: $light-grey;
+  margin-bottom: 10px;
+}
+
+.product-view-more {
+  font-size: 1rem;
+  padding: 10px 20px;
+}
+
+@media(max-width: 1000px){
+  .product-cards{
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media(max-width: 600px){
+  .product-cards{
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+  }
+}
