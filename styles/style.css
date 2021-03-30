@@ -383,7 +383,7 @@ body {
 .product-cards {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[4];
+  -ms-grid-columns: repeat(4, 1fr);
       grid-template-columns: repeat(4, 1fr);
   justify-items: center;
   grid-gap: 20px;
@@ -429,14 +429,14 @@ body {
 
 @media (max-width: 1000px) {
   .product-cards {
-    -ms-grid-columns: (1fr)[2];
+    -ms-grid-columns: repeat(2, 1fr);
         grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media (max-width: 600px) {
   .product-cards {
-    -ms-grid-columns: (1fr)[1];
+    -ms-grid-columns: repeat(1, 1fr);
         grid-template-columns: repeat(1, 1fr);
     justify-items: center;
   }
@@ -555,7 +555,7 @@ body {
 .features-cards {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[3];
+  -ms-grid-columns: repeat(3, 1fr);
       grid-template-columns: repeat(3, 1fr);
   grid-gap: 20px;
   margin: 20px;
@@ -576,14 +576,14 @@ body {
 
 @media (max-width: 800px) {
   .features-cards {
-    -ms-grid-columns: (1fr)[2];
+    -ms-grid-columns: repeat(2, 1fr);
         grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media (max-width: 520px) {
   .features-cards {
-    -ms-grid-columns: (1fr)[1];
+    -ms-grid-columns: repeat(1, 1fr);
         grid-template-columns: repeat(1, 1fr);
   }
 }
@@ -831,7 +831,7 @@ body {
 .instagram-feed {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[4];
+  -ms-grid-columns: repeat(4, 1fr);
       grid-template-columns: repeat(4, 1fr);
   grid-gap: 7px;
 }
